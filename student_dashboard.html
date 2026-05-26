@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome {{ data.name }} 🎉</h2>
+
+    <div class="card">
+        <h3>Total Fees</h3>
+        <p>₹ {{ data.total_fees }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Paid</h3>
+        <p>₹ {{ data.total_paid }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Pending</h3>
+        <p>₹ {{ data.total_pending }}</p>
+    </div>
+
+    <h3>Semester Payments</h3>
+
+    <div class="card">Sem 1 : ₹ {{ data.sem1 }}</div>
+    <div class="card">Sem 2 : ₹ {{ data.sem2 }}</div>
+    <div class="card">Sem 3 : ₹ {{ data.sem3 }}</div>
+    <div class="card">Sem 4 : ₹ {{ data.sem4 }}</div>
+    <div class="card">Sem 5 : ₹ {{ data.sem5 }}</div>
+    <div class="card">Sem 6 : ₹ {{ data.sem6 }}</div>
+    <div class="card">Sem 7 : ₹ {{ data.sem7 }}</div>
+    <div class="card">Sem 8 : ₹ {{ data.sem8 }}</div>
+</div>
+    <br>
+<a href="/logout"><button>Logout</button></a>
+
+</body>
+</html>

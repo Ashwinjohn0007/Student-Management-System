@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎓 Student Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎓 Student Management</h1>
+
+    <h2>Student Login</h2>
+    <form action="/student_login" method="POST">
+        <input type="text" name="roll" placeholder="Enter Roll Number" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <br>
+    <a href="/admin"><button>Admin Login</button></a>
+</div>
+
+</body>
+</html>

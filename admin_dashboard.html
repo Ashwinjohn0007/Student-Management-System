@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome Admin 👋</h2>
+
+    <h3>Add New Student</h3>
+
+    <form action="/add_student" method="POST">
+
+        <input type="text" name="roll" placeholder="Roll Number" required>
+        <input type="text" name="name" placeholder="Student Name" required>
+        <input type="number" name="total_fees" placeholder="Total Fees" required>
+
+        <h4>Semester Fees Paid</h4>
+
+        <input type="number" name="sem1" placeholder="Semester 1 Paid" required>
+        <input type="number" name="sem2" placeholder="Semester 2 Paid" required>
+        <input type="number" name="sem3" placeholder="Semester 3 Paid" required>
+        <input type="number" name="sem4" placeholder="Semester 4 Paid" required>
+        <input type="number" name="sem5" placeholder="Semester 5 Paid" required>
+        <input type="number" name="sem6" placeholder="Semester 6 Paid" required>
+        <input type="number" name="sem7" placeholder="Semester 7 Paid" required>
+        <input type="number" name="sem8" placeholder="Semester 8 Paid" required>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <br>
+    <a href="/"><button>Logout</button></a>
+</div>
+
+</body>
+</html>
