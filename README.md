@@ -1,4 +1,4 @@
-This is a project on Student management System 
+This is a project on Student management System  and it runs on every python platform u use 
 Basically the work of this program is to calculate total and pending fees of studednts studying in the college
 It contains a csv file so that the data can be stored in it i had low data so csv was the best to use
 
